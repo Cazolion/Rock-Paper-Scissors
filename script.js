@@ -10,14 +10,14 @@ function getComputerChoice() {
       return randomItem;
 }
 
-function playerChoice() {
+function getPlayerChoice() {
     let weapon = prompt("Which weapon do you choose?");
     
     return weapon.toLowerCase();
 }
 
 function playRound() {
-    let player = playerChoice();
+    let player = getPlayerChoice();
     let computer = getComputerChoice();
     
     if (player === computer) {
@@ -49,7 +49,7 @@ function playRound() {
         }
 }
 
-function game() {
+function playGame() {
     let playerScore = 0;
     let computerScore = 0;
     for (let i = 0; i < 5; i++) {
@@ -71,4 +71,4 @@ function game() {
         }
     }
 
-    console.log(game())
+    console.log(playGame())
