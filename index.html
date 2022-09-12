@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="header">
+        <div class="title">Rock Paper Scissors</div>
+        
+        <div class="menu">
+            <a href="#howtoplay"><div class="submenu">How to Play</div></a>
+            <a href="https://cazolion.github.com/Rock-Paper-Scissors"><div class="submenu">Reset</div></a>
+            <a href="https://github.com/Cazolion/Rock-Paper-Scissors" target="_blank"><div class="submenu">See on GitHub</div></a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="battle">
+            <div class="title2">Battle</div>
+            <div class="game">
+            <div class="playerbox">
+                <div class="subtitle">Player</div>
+                    <div class="playerscore">You have 0 points</div>        
+
+                <div class="buttons">
+                    <button type="button" id="rock">Rock</button>
+                    <button type="button" id="paper">Paper</button>
+                    <button type="button" id="scissors">Scissors</button>
+                </div>
+            </div>
+            <div class="versus">VS</div>
+            <div class="computerbox">
+                <div class="subtitle">Computer</div>
+                <div class="computerscore">Computer has 0 points</div>
+            </div>
+            </div>
+        </div> 
+        <div class="title2">Previous Rounds</div>
+        <div class="history">           
+        </div>
     
+        <div id="howtoplay">
+            <div class="title2">How to Play</div>
+            <p>The rules of Rock Paper Scissors are simple:</p>
+                <ul>
+                    <li>Rock wins against Scissors</li>
+                    <li>Scissors win against Paper</li>
+                    <li>Paper wins against Rock</li>
+                </ul>
+            <p>If both weapons are identical, it's a draw.</p>
+            <p>Choose your weapon against the Computer. The first to get to 5 points wins the game.</p>
+            <p>You can refresh the page or click the "Reset" button in the menu to play again.</p>
+        </div>
+    </div>
+    
+    <div class="footer">Made by Cazolion for The Odin Project © 2022</div>
+
 </body>
 </html>
