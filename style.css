@@ -134,6 +134,12 @@ button {
 button:hover {
     background-color: #F1EEDD;
     color: #003049;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+button:active {
+    transform: translateY(2px);
 }
 
 .buttons {
@@ -145,8 +151,24 @@ p {
     padding-left: 24px;
 }
 
-.para {
+.para, .parawin, .paralose {
     text-align: center;
+}
+
+.parawin {
+    font-size: 36px;
+    font-weight: bold;
+    color:#003049;
+    text-shadow: 4px 3px 0 #FCB62C;
+
+}
+
+.paralose {
+    font-size: 36px;
+    font-weight: bold;
+    color: #DE1D1D;
+    text-shadow: 4px 3px 0 #FCB62C;
+
 }
 
 .versus {
